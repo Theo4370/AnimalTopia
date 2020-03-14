@@ -1,7 +1,7 @@
-package com.company;
+//package com.company;
 
-public interface Tomador {
+//public interface Tomador {
 
-    public void tomarMate();
+  //  public void tomarMate();
 
-}
+//}

@@ -16,4 +16,7 @@ public abstract class Animal {
     public Integer getEnergia() {
         return energia;
     }
+
+    public void tomarMate() {
+    }
 }

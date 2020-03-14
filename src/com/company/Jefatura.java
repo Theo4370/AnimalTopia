@@ -1,14 +1,15 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Jefatura {
     private List<Animal> listaAnimales;
-    private List<Tomador> listaTomadores;
+    //private List<Tomador> listaTomadores;
 
     public Jefatura() {
-        this.listaAnimales = listaAnimales;
-        this.listaTomadores = listaTomadores;
+        this.listaAnimales = new ArrayList<>();
+        //this.listaTomadores = listaTomadores;
     }
 
     public void agregarAnimal(Animal animal) {
@@ -16,25 +17,26 @@ public class Jefatura {
 
     }
 //todo HACER QUE LO AGREGUE SOLO EXCEPTO EL PEZ
-    public void agregarTomador(Tomador tomador){
-        listaTomadores.add(tomador);
-    }
+    //public void agregarTomador(Tomador tomador){
+    //  listaTomadores.add(tomador);
+    //}
 
     public List<Animal> getListaAnimales() {
         return listaAnimales;
     }
 
-    public List<Tomador> getListaTomadores() {
-        return listaTomadores;
-    }
+    //public List<Tomador> getListaTomadores() {
+    //  return listaTomadores;
+    //}
 
 
     public void prenderRobot() {
-        for (Tomador tomador: listaTomadores) {
-            System.out.println("PIP, PUP: VOY A CEBAR MATES");
-            tomador.tomarMate();
+        System.out.println("PIP, PUP: VOY A CEBAR MATES");
+        for (Animal animal : listaAnimales) {
 
+            animal.tomarMate();
         }
+        System.out.printf("PIM, POM, PUM: TERMINO LA RONDA DE MATES");
     }
 
 }
