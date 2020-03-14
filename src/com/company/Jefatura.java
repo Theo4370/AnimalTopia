@@ -6,7 +6,7 @@ public class Jefatura {
     private List<Animal> listaAnimales;
     private List<Tomador> listaTomadores;
 
-    public Jefatura(List<Animal> listaAnimales, List<Tomador> listaTomadores) {
+    public Jefatura() {
         this.listaAnimales = listaAnimales;
         this.listaTomadores = listaTomadores;
     }
@@ -29,8 +29,12 @@ public class Jefatura {
     }
 
 
-   // public void prenderRobot() {
-     //   listaTomadores.
-    //}
+    public void prenderRobot() {
+        for (Tomador tomador: listaTomadores) {
+            System.out.println("PIP, PUP: VOY A CEBAR MATES");
+            tomador.tomarMate();
+
+        }
+    }
 
 }
