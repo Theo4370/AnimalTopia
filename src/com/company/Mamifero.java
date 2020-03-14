@@ -1,6 +1,6 @@
 package com.company;
 
-public class Mamifero extends Animal {
+public class Mamifero extends Animal implements Tomador {
     public Mamifero(String animal, Integer energia) {
         super(animal, energia);
 

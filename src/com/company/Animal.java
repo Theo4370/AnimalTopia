@@ -17,6 +17,5 @@ public abstract class Animal {
         return energia;
     }
 
-    public void tomarMate() {
-    }
+
 }

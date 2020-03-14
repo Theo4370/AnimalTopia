@@ -1,6 +1,6 @@
 package com.company;
 
-public class Reptil extends Animal {
+public class Reptil extends Animal implements Tomador {
     public Reptil(String animal, Integer energia) {
         super(animal, energia);
     }
